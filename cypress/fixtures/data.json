@@ -1,0 +1,56 @@
+{
+    "users": [
+      {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "info": {
+          "firstName": "Juan",
+          "lastName": "Gamarra",
+          "postalCode": "5000"
+        }
+      },
+      {
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "info": {
+          "firstName": "Ana",
+          "lastName": "Arboleda",
+          "postalCode": "5200"
+        }
+      }
+    ],
+    "selectors": {
+      "login": {
+        "user": "[data-test='username']",
+        "password": "[data-test='password']",
+        "btnLogin": "[data-test='login-button']"
+      },
+      "addToCart": {
+        "item": "[data-test='inventory-item']",
+        "badge": "[data-test='shopping-cart-badge']"
+      },
+      "checkout": {
+        "cart": "[data-test='shopping-cart-link']",
+        "btnCheckout": "[data-test='checkout']",
+        "formFirstName": "[data-test='firstName']",
+        "formLastName": "[data-test='lastName']",
+        "formPostalCode": "[data-test='postalCode']",
+        "formBtnContinue": "[data-test='continue']",
+        "btnFinish": "[data-test='finish']"
+      },
+      "logout": {
+        "burger": "[data-test='open-menu']",
+        "optionLogout": "[data-test='logout-sidebar-link']"
+      }
+    },
+    "strings": {
+        "urlLoginOk" : "/inventory.html",
+        "labelBtn" : "Add to cart",
+        "urlCart" : "/cart.html",
+        "urlCheckoutForm" : "/checkout-step-one.html",
+        "urlCheckoutComplete" : "/checkout-complete.html",
+        "messageOk": "Thank you for your order!",
+        "urlLogout" : "/"
+    }
+  } 
+  
